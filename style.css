@@ -31,7 +31,8 @@ html, body {
     width: 80px;
   }
   
-  /*setting position of main to relative*/
+  /*setting position of main to relative
+  setting it offset of 80px from top*/
   main {
     text-align: center;
     position: relative;
@@ -49,10 +50,14 @@ html, body {
     text-transform: uppercase;
   }
   
+  /* setting footer to fixed, its offset at the bottom and width to stretch 100% of its parent container element*/
   footer {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
   }
   
   footer p {
@@ -105,9 +110,14 @@ html, body {
     padding-bottom: 100px;
   }
   
+  /*using inline block to have elements next to each other.
+  setting width and height to 200px*/
   .supporting .col {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
   }
   
   .supporting img {
